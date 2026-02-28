@@ -22,7 +22,7 @@ transfer_size = int(input('Enter the data transfer size in megabytes (MB):'))
 
 print('FIREWALL LOG:')
 
-print('Port:', port_number,'Transfer Size:',transfer_size, 'MB')
+print(f"Port: {port_number}, Transfer Size: {transfer_size} MB")
 
 if (port_number == 22 or port_number  == 3389) and transfer_size >= 100:
     print('Risk Assessment: HIGH RISK: Potential unauthorized remote access detected!')
